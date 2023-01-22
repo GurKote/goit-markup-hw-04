@@ -148,9 +148,20 @@ body {
 
 /* ================ hero ================== */
 .hero {
-  background-color: var(--secondary-page-color);
+  /* background-color: var(--secondary-page-color); */
   padding: 188px 0px;
   text-align: center;
+  margin: auto;
+
+  max-width: 1440px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: var(--secondary-page-color);
 }
 
 .hero-title {
@@ -234,6 +245,20 @@ body {
   flex-basis: calc((100% - 72px) / 4);
 }
 
+.features-icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  margin-bottom: 8px;
+  background-color: var(--white-color);
+  border-radius: 4px;
+}
+
+.features-icon {
+  width: 64px;
+  height: 64px;
+}
 /* ========= /section 3 - features ======== */
 
 /* ========= section 4 - projects ======== */
