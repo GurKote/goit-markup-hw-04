@@ -377,6 +377,17 @@ body {
   height: 56px;
   fill: #afb1b8;
 }
+
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border-color: var(--hover-focus-color);
+}
+
+.customers-list-link:hover .customers-icon,
+.customers-list-link:focus .customers-icon {
+  fill: var(--hover-focus-color);
+}
+
 /* ========= /section 5 - Customers ============= */
 
 /* ================= Footer ================= */
