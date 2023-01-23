@@ -110,6 +110,7 @@ body {
 }
 
 .page-logo {
+  font-family: Raleway;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -234,7 +235,7 @@ body {
 
 /* =========== Styles for sections ========= */
 
-/* ========= section 3 - features ======== */
+/* ========= section 2 - features ======== */
 .features-section {
   padding-bottom: 0px;
 }
@@ -262,9 +263,9 @@ body {
   width: 64px;
   height: 64px;
 }
-/* ========= /section 3 - features ======== */
+/* ========= /section 2 - features ======== */
 
-/* ========= section 4 - projects ======== */
+/* ========= section 3 - projects ======== */
 
 .projects-list {
   display: flex;
@@ -272,12 +273,14 @@ body {
   gap: 24px;
 }
 
-/* ========= /section 4 - projects ======== */
+/* ========= /section 3 - projects ======== */
 
 /* ========= section 4 - team ======== */
 
 .team-section {
-  background-color: #f4f4fd;
+  background-color: var(--white-color);
+  max-width: 1440px;
+  margin: auto;
 }
 
 .team-list {
@@ -337,13 +340,61 @@ body {
 
 /* ========= /section 4 - team ======== */
 
+/* ========= section 5 - Customers ============= */
+
+.customers-section {
+  background-color: var(--white-background-color);
+  max-width: 1440px;
+  margin: auto;
+  padding-top: 130px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.customers-list-item {
+  flex-basis: calc((100% - 120px) / 6);
+  height: 88px;
+}
+
+.customers-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.customers-icon {
+  width: 104px;
+  height: 56px;
+  fill: #afb1b8;
+}
+/* ========= /section 5 - Customers ============= */
+
 /* ================= Footer ================= */
 
 .footer {
   background-color: var(--secondary-page-color);
+  max-width: 1440px;
+  margin: auto;
   padding: 100px 0px;
 }
+
+.footer-container {
+  display: flex;
+  gap: 120px;
+}
+
 .footer-logo {
+  font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -359,6 +410,40 @@ body {
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
   width: 265px;
+}
+
+.footer-container social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer-social-title {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--white-background-color);
+}
+
+.footer-container .social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-container .social-list-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--white-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #31d0aa;
 }
 
 /* ================= /Footer ================= */
