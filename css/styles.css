@@ -1,11 +1,13 @@
 :root {
   --primary-brand-color: #4d5ae5;
-  --secondary-page-color: #2e2f42;
-  --white-background-color: #ffffff;
-  --text-color: #434455;
-  --white-color: #f4f4fd;
-  --footer-text-color: #e7e9fc;
   --hover-focus-color: #404bbf;
+  --dark-color: #2e2f42;
+  --success-green-color: #31d0aa;
+  --text-color: #434455;
+  --subtle-text-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-color: #f4f4fd;
+  --white-color: #ffffff;
 }
 
 h1,
@@ -65,16 +67,16 @@ button {
 /* ========== Body ========== */
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--white-background-color);
+  background-color: var(--white-color);
   font-size: 16px;
-  color: var(--secondary-page-color);
+  color: var(--dark-color);
 }
 /* ========== Body ========== */
 
 /* ========== Header ========== */
 
 .page-header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--accent-color);
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -116,7 +118,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--secondary-page-color);
+  color: var(--dark-color);
   margin-right: 76px;
 }
 
@@ -128,7 +130,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--secondary-page-color);
+  color: var(--dark-color);
 }
 
 .menu-link:hover,
@@ -150,7 +152,7 @@ body {
 
 /* ================ hero ================== */
 .hero {
-  /* background-color: var(--secondary-page-color); */
+  /* background-color: var(--dark-color); */
   padding: 188px 0px;
   text-align: center;
   margin: auto;
@@ -163,14 +165,14 @@ body {
     url(../images/hero/hero-bg.jpg);
   background-size: cover;
   background-position: center;
-  background-color: var(--secondary-page-color);
+  background-color: var(--dark-color);
 }
 
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: var(--white-background-color);
+  color: var(--white-color);
   width: 500px;
   margin: auto;
   margin-bottom: 48px;
@@ -215,7 +217,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--secondary-page-color);
+  color: var(--dark-color);
 }
 
 .section-suptitle {
@@ -224,7 +226,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--secondary-page-color);
+  color: var(--dark-color);
 }
 
 .section-description {
@@ -255,7 +257,7 @@ body {
   align-items: center;
   height: 112px;
   margin-bottom: 8px;
-  background-color: var(--white-color);
+  background-color: var(--light-color);
   border-radius: 4px;
 }
 
@@ -278,7 +280,7 @@ body {
 /* ========= section 4 - team ======== */
 
 .team-section {
-  background-color: var(--white-color);
+  background-color: var(--light-color);
   max-width: 1440px;
   margin: auto;
 }
@@ -289,7 +291,7 @@ body {
 }
 
 .team-list-item {
-  background-color: var(--white-background-color);
+  background-color: var(--white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -330,11 +332,11 @@ body {
 .social-list-icon {
   width: 16px;
   height: 16px;
-  fill: var(--white-color);
+  fill: var(--light-color);
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
+.team-section .social-list-link:hover,
+.team-section .social-list-link:focus {
   background-color: var(--hover-focus-color);
 }
 
@@ -343,7 +345,7 @@ body {
 /* ========= section 5 - Customers ============= */
 
 .customers-section {
-  background-color: var(--white-background-color);
+  background-color: var(--white-color);
   max-width: 1440px;
   margin: auto;
   padding-top: 130px;
@@ -393,7 +395,7 @@ body {
 /* ================= Footer ================= */
 
 .footer {
-  background-color: var(--secondary-page-color);
+  background-color: var(--dark-color);
   max-width: 1440px;
   margin: auto;
   padding: 100px 0px;
@@ -411,7 +413,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-color);
+  color: var(--light-color);
   display: block;
   margin-bottom: 16px;
 }
@@ -419,7 +421,7 @@ body {
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--footer-text-color);
+  color: var(--accent-color);
   width: 265px;
 }
 
@@ -432,7 +434,7 @@ body {
 .footer-social-title {
   font-size: 16px;
   line-height: 1.5;
-  color: var(--white-background-color);
+  color: var(--white-color);
 }
 
 .footer-container .social-list-link {
@@ -449,7 +451,7 @@ body {
 .footer-container .social-list-icon {
   width: 24px;
   height: 24px;
-  fill: var(--white-color);
+  fill: var(--light-color);
 }
 
 .social-list-link:hover,
@@ -475,7 +477,7 @@ body {
 .filter-btn {
   min-width: 69px;
   padding: 12px 24px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
 
   font-weight: 500;
@@ -483,7 +485,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--primary-brand-color);
-  background-color: var(--white-color);
+  background-color: var(--light-color);
 }
 
 .filter-btn:hover,
@@ -508,6 +510,17 @@ body {
 
 .portfolio-list-text {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
+  border: var() 1px solid var(--accent-color);
 }
+
+/* .customers-list-link:hover,
+.customers-list-link:focus {
+  border-color: var(--hover-focus-color);
+}
+
+.customers-list-link:hover .customers-icon,
+.customers-list-link:focus .customers-icon {
+  fill: var(--hover-focus-color);
+} */
+
 /* =========== /Portfolio ========= */
